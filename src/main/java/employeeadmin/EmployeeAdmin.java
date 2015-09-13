@@ -23,7 +23,7 @@ public class EmployeeAdmin extends JFrame implements Runnable {
 	}
 
 	private void build() {
-		setTitle( "PureMVC :: Java Swing :: Employee Admin Demo  " );
+		setTitle( "Java Swing Model View Adapter (MVA) Demo" );
 		setLayout( new GridBagLayout() );
 		setDefaultCloseOperation( WindowConstants.EXIT_ON_CLOSE );
 		setResizable( false );

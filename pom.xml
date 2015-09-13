@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.puremvc</groupId>
-	<artifactId>puremvc-java-demo-employeeadmin</artifactId>
+	<artifactId>java-swing-mva-demo</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>PureMVC Java Demo Employee Admin</name>
+	<name>Java Swing Model View Adapter (MVA) Demo</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
