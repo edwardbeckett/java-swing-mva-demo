@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<charset>utf-8</charset>
+			<Pattern>%-30([%p] [%c:%L]) » %m%n%rEx</Pattern>
+		</encoder>
+	</appender>
+
+	<!--  SPECIFIC LOGGERS HERE.-->
+	<logger name="employeeadmin" level="DEBUG"/>
+	<logger name="javax.swing" level="OFF"/>
+	<logger name="java.awt" level="OFF"/>
+	<logger name="sun.awt" level="OFF"/>
+	<logger name="com.sun.xml.internal.bind" level="WARN"/>
+	<logger name="javax.activation" level="OFF"/>
+	<logger name="javax.xml.bind" level="OFF"/>
+	<logger name="ch.qos.logback" level="INFO"/>
+	<logger name="employeeadmin.model" level="DEBUG"/>
+	<logger name="employeeadmin.view" level="DEBUG"/>
+	<logger name="employeeadmin.controller" level="DEBUG"/>
+	<logger name="org.puremvc" level="NONE"/>
+
+
+	<contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+		<resetJUL>true</resetJUL>
+	</contextListener>
+
+	<root level="${logback.loglevel}">
+		<appender-ref ref="CONSOLE"/>
+	</root>
+</configuration>
