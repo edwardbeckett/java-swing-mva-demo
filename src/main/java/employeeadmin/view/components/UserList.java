@@ -27,7 +27,7 @@ import java.util.ArrayList;
  * @author Edward Beckett :: <Edward@EdwardBeckett.com>
  * @since :: 6/3/2015
  */
-public class UserList extends JPanel implements ActionListener, ChangeListener, ListSelectionListener {
+public class UserList extends JPanel implements ActionListener, ListSelectionListener {
 
 	public static final String NEW_USER = "New";
 	public static final String NEW_USER_LABEL = "New";
@@ -221,11 +221,6 @@ public class UserList extends JPanel implements ActionListener, ChangeListener, 
 			default:
 				throw new UnhandledException( "Error Unhandled event [" + e.getID() + "]" );
 		}
-
-	}
-
-	@Override
-	public void stateChanged( ChangeEvent e ) {
 
 	}
 
