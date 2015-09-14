@@ -1,5 +1,7 @@
 .idea/
 *.iml
+*.eap
+*.ldb
 dependency-reduced-pom.xml
 target/
 
