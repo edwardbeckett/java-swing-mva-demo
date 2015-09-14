@@ -34,27 +34,6 @@ public class EmployeeAdmin extends JFrame implements Runnable {
 		setVisible( true );
 	}
 
-	public static void main( String... args ) {
-		try {
-			UIManager.setLookAndFeel( new NimbusLookAndFeel() );
-		} catch( UnsupportedLookAndFeelException e ) {
-			e.printStackTrace();
-		}
-		new EmployeeAdmin().run();
-	}
-
-	@Override
-	public void run() {
-		SwingUtilities.invokeLater( () -> {
-			//go.
-		} );
-	}
-
-	protected void startup() {
-		ApplicationFacade.getInstance().startup( this );
-
-	}
-
 	private void buildComponents() {
 
 		JPanel basePanel = new JPanel( new GridBagLayout() );
@@ -89,6 +68,26 @@ public class EmployeeAdmin extends JFrame implements Runnable {
 			.setInsets( 0, 0, 0, 0 )
 			.setIpad( 0, 0 );
 		add( basePanel, basePanelConstraints );
+	}
+
+	protected void startup() {
+		ApplicationFacade.getInstance().startup( this );
+	}
+
+	public static void main( String... args ) {
+		try {
+			UIManager.setLookAndFeel( new NimbusLookAndFeel() );
+		} catch( UnsupportedLookAndFeelException e ) {
+			e.printStackTrace();
+		}
+		new EmployeeAdmin().run();
+	}
+
+	@Override
+	public void run() {
+		SwingUtilities.invokeLater( () -> {
+			//go.
+		} );
 	}
 
 	public UserList getUserList() {
