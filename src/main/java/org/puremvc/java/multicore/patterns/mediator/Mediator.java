@@ -14,7 +14,7 @@ import org.puremvc.java.multicore.patterns.observer.Notifier;
 /**
  * A base <code>IMediator</code> implementation.
  *
- * @see org.puremvc.java.core.view.View View
+ * @see org.puremvc.java.multicore.core.view.View
  */
 public class Mediator extends Notifier implements IMediator, INotifier {
 

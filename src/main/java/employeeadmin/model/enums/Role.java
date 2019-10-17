@@ -17,7 +17,7 @@ public enum Role {
 	ACCT_PAY( "Accounts Payable", 1 ),
 	ACCT_RCV( "Accounts Receivable", 2 ),
 	EMP_BENEFITS( "Employee Benefits", 3 ),
-	GEN_LEDGER( "General Ledge", 4 ),
+	GEN_LEDGER( "General Ledger", 4 ),
 	PAYROLL( "Payroll", 5 ),
 	INVENTORY( "Inventory", 6 ),
 	PRODUCTION( "Production", 7 ),

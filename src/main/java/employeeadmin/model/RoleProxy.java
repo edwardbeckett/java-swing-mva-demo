@@ -51,7 +51,7 @@ public class RoleProxy extends Proxy {
 						hasRole = true;
 						break;
 					}
-				}
+				}	
 				break;
 			}
 		}
